@@ -4,3 +4,4 @@
 - deck summary command, keyboard shortcuts doc
 - VAD pad tuning, faster rms windowing
 
+## [2.0.0] - 2025-10-02
