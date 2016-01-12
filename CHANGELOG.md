@@ -9,3 +9,4 @@
 - Android demo: foreground recorder service
 
 ## [1.2.0] - 2024-11-08
+- model registry + suggest_model
