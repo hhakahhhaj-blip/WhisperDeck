@@ -10,3 +10,5 @@
 
 ## [1.2.0] - 2024-11-08
 - model registry + suggest_model
+- Android demo app skeleton
+
