@@ -12,3 +12,5 @@
 - model registry + suggest_model
 - Android demo app skeleton
 
+## [1.0.0] - 2023-06-29
+- whisper.cpp integration, segment output
