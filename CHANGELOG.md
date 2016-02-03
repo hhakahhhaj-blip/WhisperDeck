@@ -14,3 +14,5 @@
 
 ## [1.0.0] - 2023-06-29
 - whisper.cpp integration, segment output
+- first stable tag: transcribe + trim + tags
+
