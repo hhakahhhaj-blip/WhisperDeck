@@ -17,3 +17,5 @@
 - first stable tag: transcribe + trim + tags
 
 ## [0.3.0] - 2020-02-19
+- segment output for transcripts
+- config files, quieter CLI defaults
