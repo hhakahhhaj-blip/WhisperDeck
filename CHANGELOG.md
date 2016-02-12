@@ -16,3 +16,4 @@
 - whisper.cpp integration, segment output
 - first stable tag: transcribe + trim + tags
 
+## [0.3.0] - 2020-02-19
