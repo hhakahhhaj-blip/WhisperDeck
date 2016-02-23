@@ -19,3 +19,5 @@
 ## [0.3.0] - 2020-02-19
 - segment output for transcripts
 - config files, quieter CLI defaults
+
+## [0.2.0] - 2017-04-03
