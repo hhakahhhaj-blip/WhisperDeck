@@ -10,3 +10,4 @@ lint:
 
 deck:
 	$(PY) -m whisperdeck.deck list
+
