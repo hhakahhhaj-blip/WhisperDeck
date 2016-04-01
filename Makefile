@@ -8,3 +8,5 @@ test:
 lint:
 	$(PY) -m compileall -q whisperdeck/
 
+deck:
+	$(PY) -m whisperdeck.deck list
