@@ -12,3 +12,7 @@ Everything runs locally: audio never leaves the machine.
 ## Why this exists
 
 I record a lot of voice memos and wanted one tool that could trim them, tag
+them, and turn them into searchable text without uploading anything to a
+server. WhisperDeck is that tool: a *deck* of recordings, transcribed on
+device with a local [whisper.cpp](https://github.com/ggerganov/whisper.cpp)
+build.
