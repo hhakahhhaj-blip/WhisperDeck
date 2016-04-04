@@ -8,3 +8,7 @@
 **On-device audio transcription toolkit** - a Python engine plus a small
 Android demo app. Trim, tag, transcribe and export your recordings.
 Everything runs locally: audio never leaves the machine.
+
+## Why this exists
+
+I record a lot of voice memos and wanted one tool that could trim them, tag
