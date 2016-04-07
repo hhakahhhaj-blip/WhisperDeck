@@ -23,3 +23,7 @@ build.
 |---|---|
 | **Local-first** | one-time model download is the only network call, ever |
 | **Trim + tag** | wav trimming, VAD-based speech windows, sidecar tags |
+| **Transcribe** | whisper.cpp wrapper with segment timestamps |
+| **Model zoo** | tiny → large-v3, picked per clip length |
+| **Export** | SRT, WebVTT and markdown tables |
+| **Android demo** | foreground recorder service + deck browser |
