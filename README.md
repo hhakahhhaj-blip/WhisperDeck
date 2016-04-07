@@ -20,3 +20,6 @@ build.
 ## Features
 
 | | |
+|---|---|
+| **Local-first** | one-time model download is the only network call, ever |
+| **Trim + tag** | wav trimming, VAD-based speech windows, sidecar tags |
