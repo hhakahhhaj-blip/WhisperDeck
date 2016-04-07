@@ -16,3 +16,7 @@ them, and turn them into searchable text without uploading anything to a
 server. WhisperDeck is that tool: a *deck* of recordings, transcribed on
 device with a local [whisper.cpp](https://github.com/ggerganov/whisper.cpp)
 build.
+
+## Features
+
+| | |
