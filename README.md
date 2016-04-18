@@ -27,3 +27,7 @@ build.
 | **Model zoo** | tiny → large-v3, picked per clip length |
 | **Export** | SRT, WebVTT and markdown tables |
 | **Android demo** | foreground recorder service + deck browser |
+
+## Layout
+
+```
