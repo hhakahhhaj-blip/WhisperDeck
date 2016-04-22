@@ -35,3 +35,7 @@ whisperdeck/    the Python engine (CLI + library)
 app/            minimal Android demo that records and lists a deck
 models/         whisper model helpers and download script
 docs/           guides (getting started, model zoo, shortcuts, exports)
+examples/       end-to-end recipes (podcast notes, meeting minutes)
+```
+
+## Quick start
