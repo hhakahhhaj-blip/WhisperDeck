@@ -43,3 +43,7 @@ examples/       end-to-end recipes (podcast notes, meeting minutes)
 ```console
 $ pip install -e .
 $ wd deck list
+$ wd transcribe memo.wav --model base.en
+$ wd export deck.srt --format srt
+```
+
