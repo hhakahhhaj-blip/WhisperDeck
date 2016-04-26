@@ -39,3 +39,7 @@ examples/       end-to-end recipes (podcast notes, meeting minutes)
 ```
 
 ## Quick start
+
+```console
+$ pip install -e .
+$ wd deck list
