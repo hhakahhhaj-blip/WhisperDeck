@@ -50,3 +50,7 @@ $ wd export deck.srt --format srt
 The Android demo lives in `app/` - open it in Android Studio, run it on a
 device, and recordings land straight in a deck.
 
+## Requirements
+
+- Python 3.9+
+- a `whisper.cpp` binary on PATH (see [docs/model-zoo.md](docs/model-zoo.md))
