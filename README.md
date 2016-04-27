@@ -47,3 +47,6 @@ $ wd transcribe memo.wav --model base.en
 $ wd export deck.srt --format srt
 ```
 
+The Android demo lives in `app/` - open it in Android Studio, run it on a
+device, and recordings land straight in a deck.
+
