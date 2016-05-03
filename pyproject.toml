@@ -4,3 +4,5 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "whisperdeck"
+version = "2.1.0"
+description = "On-device audio transcription toolkit - trim, tag, transcribe, export"
