@@ -8,3 +8,5 @@ version = "2.1.0"
 description = "On-device audio transcription toolkit - trim, tag, transcribe, export"
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["whisper", "transcription", "audio", "speech-to-text"]
