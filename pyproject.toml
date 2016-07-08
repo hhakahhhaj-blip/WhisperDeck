@@ -19,3 +19,5 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Speech",
 ]
 
+[project.scripts]
+wd = "whisperdeck.cli:main"
