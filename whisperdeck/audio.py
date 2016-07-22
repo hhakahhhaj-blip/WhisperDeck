@@ -10,3 +10,6 @@ class AudioError(Exception):
 
 
 def load_wav(path):
+    """Return (sample_rate, channels, frames_as_list_of_ints)."""
+    p = Path(path)
+    if not p.exists():
