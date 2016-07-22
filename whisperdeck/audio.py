@@ -6,3 +6,7 @@ from pathlib import Path
 
 
 class AudioError(Exception):
+    pass
+
+
+def load_wav(path):
