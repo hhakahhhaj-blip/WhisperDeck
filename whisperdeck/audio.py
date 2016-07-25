@@ -16,3 +16,7 @@ def load_wav(path):
         raise AudioError(f"no such file: {p}")
     with wave.open(str(p), "rb") as w:
         rate = w.getframerate()
+        channels = w.getnchannels()
+        width = w.getsampwidth()
+        if width != 2:
+            raise AudioError("only 16-bit pcm supported")
