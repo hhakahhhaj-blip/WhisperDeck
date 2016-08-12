@@ -23,3 +23,6 @@ def load_wav(path):
         raw = w.readframes(w.getnframes())
     fmt = {1: "b", 2: "h", 4: "i"}[width]
     frames = list(struct.unpack(f"<{len(raw) // width}{fmt}", raw))
+    return rate, channels, frames
+
+
