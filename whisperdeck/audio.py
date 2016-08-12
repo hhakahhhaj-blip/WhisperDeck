@@ -20,3 +20,6 @@ def load_wav(path):
         width = w.getsampwidth()
         if width != 2:
             raise AudioError("only 16-bit pcm supported")
+        raw = w.readframes(w.getnframes())
+    fmt = {1: "b", 2: "h", 4: "i"}[width]
+    frames = list(struct.unpack(f"<{len(raw) // width}{fmt}", raw))
