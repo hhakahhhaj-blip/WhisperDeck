@@ -26,3 +26,6 @@ def load_wav(path):
     return rate, channels, frames
 
 
+def duration_seconds(path):
+    rate, channels, frames = load_wav(path)
+    return len(frames) / channels / rate
