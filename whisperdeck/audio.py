@@ -29,3 +29,7 @@ def load_wav(path):
 def duration_seconds(path):
     rate, channels, frames = load_wav(path)
     return len(frames) / channels / rate
+
+
+def trim(path, out_path, start_s, end_s):
+    """Write frames between start_s and end_s to out_path."""
