@@ -33,3 +33,6 @@ def duration_seconds(path):
 
 def trim(path, out_path, start_s, end_s):
     """Write frames between start_s and end_s to out_path."""
+    rate, channels, frames = load_wav(path)
+    i0 = int(start_s * rate * channels)
+    i1 = min(len(frames), int(end_s * rate * channels))
