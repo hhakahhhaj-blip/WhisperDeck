@@ -39,3 +39,6 @@ def trim(path, out_path, start_s, end_s):
     with wave.open(str(out_path), "wb") as w:
         w.setnchannels(channels)
         w.setsampwidth(2)
+        w.setframerate(rate)
+        w.writeframes(struct.pack(f"<{i1 - i0}h", *frames[i0:i1]))
+    return out_path
