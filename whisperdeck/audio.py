@@ -36,3 +36,6 @@ def trim(path, out_path, start_s, end_s):
     rate, channels, frames = load_wav(path)
     i0 = int(start_s * rate * channels)
     i1 = min(len(frames), int(end_s * rate * channels))
+    with wave.open(str(out_path), "wb") as w:
+        w.setnchannels(channels)
+        w.setsampwidth(2)
