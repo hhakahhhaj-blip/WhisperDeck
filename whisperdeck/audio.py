@@ -42,3 +42,7 @@ def trim(path, out_path, start_s, end_s):
         w.setframerate(rate)
         w.writeframes(struct.pack(f"<{i1 - i0}h", *frames[i0:i1]))
     return out_path
+
+
+def rms_levels(path, window_s=0.5):
+    """Coarse loudness map used by the deck view."""
