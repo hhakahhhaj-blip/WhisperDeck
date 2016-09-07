@@ -14,3 +14,4 @@ def speech_windows(path, threshold=0.04, pad_s=0.4):
             open_at = max(0.0, t0 - pad_s)
         elif level < threshold and open_at is not None:
             windows.append((open_at, t1 + pad_s))
+            open_at = None
