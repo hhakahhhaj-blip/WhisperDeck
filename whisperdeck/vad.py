@@ -17,3 +17,4 @@ def speech_windows(path, threshold=0.04, pad_s=0.4):
             open_at = None
     if open_at is not None:
         windows.append((open_at, len(levels) * 0.25))
+    return windows
