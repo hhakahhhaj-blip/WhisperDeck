@@ -10,3 +10,6 @@ REGISTRY = {
     "large-v3":  {"size_mb": 2900, "params": "1550M", "vram_mb": 5200},
 }
 
+
+def model_path(name):
+    return Path("models") / f"ggml-{name}.bin"
