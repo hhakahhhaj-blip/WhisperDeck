@@ -13,3 +13,6 @@ REGISTRY = {
 
 def model_path(name):
     return Path("models") / f"ggml-{name}.bin"
+
+
+def installed_models():
