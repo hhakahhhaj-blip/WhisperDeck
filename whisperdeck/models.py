@@ -16,3 +16,6 @@ def model_path(name):
 
 
 def installed_models():
+    found = []
+    for name in REGISTRY:
+        p = model_path(name)
