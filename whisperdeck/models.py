@@ -22,3 +22,6 @@ def installed_models():
         if p.exists() and p.stat().st_size > 1_000_000:
             found.append(name)
     return found
+
+
+def suggest_model(duration_s, quality="balanced"):
