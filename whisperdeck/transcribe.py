@@ -4,3 +4,8 @@ import shutil
 import subprocess
 from pathlib import Path
 
+
+class TranscribeError(Exception):
+    pass
+
+
