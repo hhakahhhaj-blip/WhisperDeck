@@ -19,3 +19,6 @@ def installed_models():
     found = []
     for name in REGISTRY:
         p = model_path(name)
+        if p.exists() and p.stat().st_size > 1_000_000:
+            found.append(name)
+    return found
