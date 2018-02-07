@@ -14,3 +14,8 @@ def find_binary():
         path = shutil.which(name)
         if path:
             return path
+    raise TranscribeError(
+        "whisper.cpp binary not found on PATH "
+        "(see docs/model-zoo.md for build instructions)")
+
+
