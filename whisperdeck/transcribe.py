@@ -24,3 +24,9 @@ def transcribe_file(wav_path, model="base.en", language="auto", threads=4):
     binary = find_binary()
     model_path = Path("models") / f"ggml-{model}.bin"
     if not model_path.exists():
+        raise TranscribeError(f"model not found: {model_path} - run "
+                              "models/download.py first")
+    cmd = [binary, "-m", str(model_path), "-t", str(threads),
+           "-nt", "-np", str(wav_path)]
+    if language != "auto":
+        cmd += ["-l", language]
