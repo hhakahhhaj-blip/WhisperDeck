@@ -30,3 +30,8 @@ def transcribe_file(wav_path, model="base.en", language="auto", threads=4):
            "-nt", "-np", str(wav_path)]
     if language != "auto":
         cmd += ["-l", language]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise TranscribeError(proc.stderr.strip()[:400])
+    return proc.stdout.strip()
+
