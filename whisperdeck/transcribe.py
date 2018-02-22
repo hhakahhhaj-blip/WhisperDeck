@@ -35,3 +35,8 @@ def transcribe_file(wav_path, model="base.en", language="auto", threads=4):
         raise TranscribeError(proc.stderr.strip()[:400])
     return proc.stdout.strip()
 
+
+def transcribe_segments(wav_path, **kw):
+    """Return [(start_s, end_s, text), ...] parsed from -oj output."""
+    import json
+    binary = find_binary()
