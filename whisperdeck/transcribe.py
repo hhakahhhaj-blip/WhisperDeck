@@ -40,3 +40,8 @@ def transcribe_segments(wav_path, **kw):
     """Return [(start_s, end_s, text), ...] parsed from -oj output."""
     import json
     binary = find_binary()
+    model_path = Path("models") / f"ggml-{kw.get('model', 'base.en')}.bin"
+    proc = subprocess.run(
+        [binary, "-m", str(model_path), "-oj", "-of", "-", str(wav_path)],
+        capture_output=True, text=True)
+    if proc.returncode != 0:
