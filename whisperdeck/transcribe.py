@@ -45,3 +45,8 @@ def transcribe_segments(wav_path, **kw):
         [binary, "-m", str(model_path), "-oj", "-of", "-", str(wav_path)],
         capture_output=True, text=True)
     if proc.returncode != 0:
+        raise TranscribeError(proc.stderr.strip()[:400])
+    data = json.loads(proc.stdout)
+    segs = []
+    for s in data.get("transcription", []):
+        ts = s.get("timestamps", {})
