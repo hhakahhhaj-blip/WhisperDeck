@@ -16,3 +16,7 @@ def main(argv=None):
     p_deck = sub.add_parser("deck", help="list recordings in a deck")
     p_deck.add_argument("--dir", default=".")
     p_deck.add_argument("--tag", default=None)
+
+    p_tr = sub.add_parser("transcribe", help="transcribe one file")
+    p_tr.add_argument("wav")
+    p_tr.add_argument("--model", default="base.en")
