@@ -20,3 +20,8 @@ def main(argv=None):
     p_tr = sub.add_parser("transcribe", help="transcribe one file")
     p_tr.add_argument("wav")
     p_tr.add_argument("--model", default="base.en")
+    p_tr.add_argument("--language", default="auto")
+
+    p_ex = sub.add_parser("export", help="export a deck to srt/vtt/md")
+    p_ex.add_argument("out")
+    p_ex.add_argument("--format", choices=["srt", "vtt", "md"], default="srt")
