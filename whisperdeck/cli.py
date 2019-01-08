@@ -25,3 +25,7 @@ def main(argv=None):
     p_ex = sub.add_parser("export", help="export a deck to srt/vtt/md")
     p_ex.add_argument("out")
     p_ex.add_argument("--format", choices=["srt", "vtt", "md"], default="srt")
+
+    args = ap.parse_args(argv)
+
+    if args.cmd == "deck":
