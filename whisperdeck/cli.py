@@ -38,3 +38,7 @@ def main(argv=None):
 
     if args.cmd == "transcribe":
         from .transcribe import transcribe_file
+        text = transcribe_file(args.wav, model=args.model, language=args.language)
+        print(text)
+        return 0
+
