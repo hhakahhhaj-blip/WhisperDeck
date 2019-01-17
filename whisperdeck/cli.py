@@ -33,3 +33,8 @@ def main(argv=None):
         for item in deck.items():
             tags = read_tags(item.path).get("tags", [])
             label = f" [{','.join(tags)}]" if tags else ""
+            print(f"{item.path.name}  {duration_seconds(item.path):7.1f}s{label}")
+        return 0
+
+    if args.cmd == "transcribe":
+        from .transcribe import transcribe_file
