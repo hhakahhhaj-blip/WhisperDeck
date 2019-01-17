@@ -29,3 +29,7 @@ def main(argv=None):
     args = ap.parse_args(argv)
 
     if args.cmd == "deck":
+        deck = Deck(args.dir)
+        for item in deck.items():
+            tags = read_tags(item.path).get("tags", [])
+            label = f" [{','.join(tags)}]" if tags else ""
