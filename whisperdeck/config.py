@@ -5,3 +5,5 @@ from pathlib import Path
 DEFAULTS = {
     "model": "base.en",
     "language": "auto",
+    "threads": 4,
+    "deck_dir": ".",
