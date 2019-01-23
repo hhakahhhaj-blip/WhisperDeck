@@ -7,3 +7,5 @@ DEFAULTS = {
     "language": "auto",
     "threads": 4,
     "deck_dir": ".",
+    "export_format": "srt",
+}
