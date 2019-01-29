@@ -10,3 +10,5 @@ DEFAULTS = {
     "export_format": "srt",
 }
 
+
+def load_config(root="."):
