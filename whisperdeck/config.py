@@ -12,3 +12,5 @@ DEFAULTS = {
 
 
 def load_config(root="."):
+    p = Path(root) / ".whisperdeck.json"
+    cfg = dict(DEFAULTS)
