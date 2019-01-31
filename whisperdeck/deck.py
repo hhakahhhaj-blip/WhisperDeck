@@ -9,3 +9,7 @@ AUDIO_EXTS = {".wav", ".mp3", ".m4a", ".flac"}
 class DeckItem:
     def __init__(self, path, mtime=None):
         self.path = Path(path)
+        self.mtime = mtime or self.path.stat().st_mtime
+
+    @property
+    def name(self):
