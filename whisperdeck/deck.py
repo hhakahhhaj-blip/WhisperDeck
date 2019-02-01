@@ -20,3 +20,7 @@ class DeckItem:
         return (time.time() - self.mtime) / 86400
 
 
+class Deck:
+    def __init__(self, root="."):
+        self.root = Path(root)
+
