@@ -17,3 +17,6 @@ class DeckItem:
 
     @property
     def age_days(self):
+        return (time.time() - self.mtime) / 86400
+
+
