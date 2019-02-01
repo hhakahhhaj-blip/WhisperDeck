@@ -13,3 +13,7 @@ class DeckItem:
 
     @property
     def name(self):
+        return self.path.stem
+
+    @property
+    def age_days(self):
