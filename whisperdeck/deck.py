@@ -24,3 +24,7 @@ class Deck:
     def __init__(self, root="."):
         self.root = Path(root)
 
+    def items(self):
+        found = [DeckItem(p) for p in sorted(self.root.iterdir())
+                 if p.suffix.lower() in AUDIO_EXTS]
+        found.sort(key=lambda it: -it.mtime)
