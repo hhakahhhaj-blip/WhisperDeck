@@ -28,3 +28,6 @@ class Deck:
         found = [DeckItem(p) for p in sorted(self.root.iterdir())
                  if p.suffix.lower() in AUDIO_EXTS]
         found.sort(key=lambda it: -it.mtime)
+        return found
+
+    def filter_by_tag(self, tag):
