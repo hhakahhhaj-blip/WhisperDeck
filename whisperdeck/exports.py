@@ -15,3 +15,7 @@ def _stamp_vtt(t):
     return _stamp_srt(t).replace(",", ".")
 
 
+def segments_to_srt(segments):
+    out = []
+    for i, (start, end, text) in enumerate(segments, 1):
+        out.append(str(i))
