@@ -19,3 +19,7 @@ def segments_to_srt(segments):
     out = []
     for i, (start, end, text) in enumerate(segments, 1):
         out.append(str(i))
+        out.append(f"{_stamp_srt(start)} --> {_stamp_srt(end)}")
+        out.append(text)
+        out.append("")
+    return "\n".join(out)
