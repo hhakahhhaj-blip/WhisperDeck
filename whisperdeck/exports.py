@@ -11,3 +11,7 @@ def _stamp_srt(t):
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
+def _stamp_vtt(t):
+    return _stamp_srt(t).replace(",", ".")
+
+
