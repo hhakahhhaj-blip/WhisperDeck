@@ -31,3 +31,7 @@ def segments_to_vtt(segments):
         out.append(f"{_stamp_vtt(start)} --> {_stamp_vtt(end)}")
         out.append(text)
         out.append("")
+    return "\n".join(out)
+
+
+def segments_to_md(segments):
