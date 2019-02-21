@@ -23,3 +23,7 @@ def segments_to_srt(segments):
         out.append(text)
         out.append("")
     return "\n".join(out)
+
+
+def segments_to_vtt(segments):
+    out = ["WEBVTT", ""]
