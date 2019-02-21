@@ -27,3 +27,7 @@ def segments_to_srt(segments):
 
 def segments_to_vtt(segments):
     out = ["WEBVTT", ""]
+    for start, end, text in segments:
+        out.append(f"{_stamp_vtt(start)} --> {_stamp_vtt(end)}")
+        out.append(text)
+        out.append("")
