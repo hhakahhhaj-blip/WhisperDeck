@@ -35,3 +35,7 @@ def segments_to_vtt(segments):
 
 
 def segments_to_md(segments):
+    out = ["| start | text |", "|---|---|"]
+    for start, _, text in segments:
+        out.append(f"| {_stamp_vtt(start)} | {text} |")
+    return "\n".join(out)
