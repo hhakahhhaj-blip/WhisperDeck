@@ -50,3 +50,13 @@ def transcribe_segments(wav_path, **kw):
     segs = []
     for s in data.get("transcription", []):
         ts = s.get("timestamps", {})
+        segs.append((_parse_ts(ts.get("from")), _parse_ts(ts.get("to")),
+                     s.get("text", "").strip()))
+    return segs
+
+
+def _parse_ts(stamp):
+    if not stamp or "--" in stamp:
+        return 0.0
+    h, m, rest = stamp.split(":")
+    sec, ms = rest.split(",")
