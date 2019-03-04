@@ -7,3 +7,6 @@ from pathlib import Path
 def sidecar_for(audio_path):
     p = Path(audio_path)
     return p.with_suffix(".wd.json")
+
+
+def read_tags(audio_path):
