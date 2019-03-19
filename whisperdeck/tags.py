@@ -10,3 +10,6 @@ def sidecar_for(audio_path):
 
 
 def read_tags(audio_path):
+    sc = sidecar_for(audio_path)
+    if not sc.exists():
+        return {"tags": [], "notes": ""}
