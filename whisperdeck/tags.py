@@ -22,3 +22,6 @@ def write_tags(audio_path, tags, notes=""):
                              indent=2), "utf-8")
     return sc
 
+
+def add_tag(audio_path, tag):
+    data = read_tags(audio_path)
