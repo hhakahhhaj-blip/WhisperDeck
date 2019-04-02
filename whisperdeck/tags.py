@@ -16,3 +16,6 @@ def read_tags(audio_path):
     return json.loads(sc.read_text("utf-8"))
 
 
+def write_tags(audio_path, tags, notes=""):
+    sc = sidecar_for(audio_path)
+    sc.write_text(json.dumps({"tags": sorted(set(tags)), "notes": notes},
