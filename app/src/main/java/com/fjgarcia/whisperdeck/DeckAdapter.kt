@@ -14,3 +14,7 @@ class DeckAdapter(private val onClick: (DeckItem) -> Unit) :
 
     fun submit(next: List<DeckItem>) {
         items.clear(); items.addAll(next); notifyDataSetChanged()
+    }
+
+    class Holder(v: android.view.View) : RecyclerView.ViewHolder(v) {
+        val title: TextView = v.findViewById(android.R.id.text1)
