@@ -10,3 +10,7 @@ data class DeckItem(val name: String, val ageDays: Int)
 class DeckAdapter(private val onClick: (DeckItem) -> Unit) :
     RecyclerView.Adapter<DeckAdapter.Holder>() {
 
+    private val items = mutableListOf<DeckItem>()
+
+    fun submit(next: List<DeckItem>) {
+        items.clear(); items.addAll(next); notifyDataSetChanged()
