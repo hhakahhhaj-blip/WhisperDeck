@@ -18,3 +18,7 @@ class DeckAdapter(private val onClick: (DeckItem) -> Unit) :
 
     class Holder(v: android.view.View) : RecyclerView.ViewHolder(v) {
         val title: TextView = v.findViewById(android.R.id.text1)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
+        val v = LayoutInflater.from(parent.context)
