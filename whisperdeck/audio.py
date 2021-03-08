@@ -46,3 +46,10 @@ def trim(path, out_path, start_s, end_s):
 
 def rms_levels(path, window_s=0.5):
     """Coarse loudness map used by the deck view."""
+    rate, channels, frames = load_wav(path)
+    step = int(rate * channels * window_s)
+    levels = []
+    for i in range(0, len(frames) - step, step):
+        chunk = frames[i:i + step]
+        acc = sum(x * x for x in chunk) / len(chunk)
+        levels.append(acc ** 0.5 / 32768.0)
