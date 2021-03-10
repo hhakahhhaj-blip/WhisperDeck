@@ -22,3 +22,7 @@ class DeckAdapter(private val onClick: (DeckItem) -> Unit) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val v = LayoutInflater.from(parent.context)
+            .inflate(android.R.layout.simple_list_item_1, parent, false)
+        return Holder(v)
+    }
+
