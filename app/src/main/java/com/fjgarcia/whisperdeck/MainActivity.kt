@@ -20,3 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        status = findViewById(R.id.status)
+        deckAdapter = DeckAdapter { item ->
+            status.text = getString(R.string.selected, item.name)
+        }
+        findViewById<RecyclerView>(R.id.deck_list).apply {
