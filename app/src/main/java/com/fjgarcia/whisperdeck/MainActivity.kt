@@ -32,3 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.record_btn).setOnClickListener { toggleRecording() }
         deckAdapter.submit(loadDeck())
+    }
+
+    private fun toggleRecording() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
+            != PackageManager.PERMISSION_GRANTED
+        ) {
