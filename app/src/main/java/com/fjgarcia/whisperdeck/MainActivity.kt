@@ -26,3 +26,9 @@ class MainActivity : AppCompatActivity() {
             status.text = getString(R.string.selected, item.name)
         }
         findViewById<RecyclerView>(R.id.deck_list).apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = deckAdapter
+        }
+
+        findViewById<Button>(R.id.record_btn).setOnClickListener { toggleRecording() }
+        deckAdapter.submit(loadDeck())
