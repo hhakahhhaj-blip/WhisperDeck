@@ -7,3 +7,9 @@ import android.media.MediaRecorder
 import android.os.IBinder
 import java.io.File
 
+class RecorderService : Service() {
+
+    private var recorder: MediaRecorder? = null
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        startForeground(11, buildNotification())
