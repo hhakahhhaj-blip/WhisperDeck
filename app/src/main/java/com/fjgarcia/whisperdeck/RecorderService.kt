@@ -13,3 +13,8 @@ class RecorderService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         startForeground(11, buildNotification())
+        startRecording()
+        return START_STICKY
+    }
+
+    private fun startRecording() {
