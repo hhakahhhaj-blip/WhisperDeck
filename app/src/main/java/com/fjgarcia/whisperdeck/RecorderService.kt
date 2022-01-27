@@ -18,3 +18,8 @@ class RecorderService : Service() {
     }
 
     private fun startRecording() {
+        val out = File(getExternalFilesDir(null), "deck-${System.currentTimeMillis()}.m4a")
+        recorder = (recorder ?: MediaRecorder()).apply {
+            setAudioSource(MediaRecorder.AudioSource.MIC)
+            setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
+            setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
