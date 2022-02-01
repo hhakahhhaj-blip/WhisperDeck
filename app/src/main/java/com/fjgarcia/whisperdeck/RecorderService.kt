@@ -23,3 +23,8 @@ class RecorderService : Service() {
             setAudioSource(MediaRecorder.AudioSource.MIC)
             setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
             setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
+            setOutputFile(out.absolutePath)
+            prepare()
+            start()
+        }
+    }
