@@ -28,3 +28,9 @@ class RecorderService : Service() {
             start()
         }
     }
+
+    private fun buildNotification(): Notification = Notification.Builder(this, "deck")
+        .setContentTitle(getString(R.string.app_name))
+        .setContentText(getString(R.string.recording))
+        .setSmallIcon(android.R.drawable.ic_btn_speak_now)
+        .build()
