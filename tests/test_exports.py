@@ -1,0 +1,1 @@
+"""SRT/VTT stamping rules."""
