@@ -19,3 +19,7 @@ def test_load(tmp_path):
     rate, ch, frames = load_wav(p)
     assert rate == 8000 and ch == 1 and len(frames) == 8000
 
+
+def test_trim(tmp_path):
+    p = _mk(tmp_path / "a.wav")
+    out = trim(p, tmp_path / "b.wav", 0.25, 0.75)
