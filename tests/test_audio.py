@@ -14,3 +14,8 @@ def _mk(path, rate=8000, secs=1.0):
     return path
 
 
+def test_load(tmp_path):
+    p = _mk(tmp_path / "a.wav")
+    rate, ch, frames = load_wav(p)
+    assert rate == 8000 and ch == 1 and len(frames) == 8000
+
