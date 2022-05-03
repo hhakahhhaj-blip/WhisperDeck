@@ -11,3 +11,6 @@ def test_roundtrip(tmp_path):
     assert data["tags"] == ["draft", "podcast"]
     add_tag(p, "podcast")
     assert read_tags(p)["tags"].count("podcast") == 1
+
+
+def test_filter(tmp_path):
