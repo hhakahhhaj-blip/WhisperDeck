@@ -9,3 +9,6 @@ from whisperdeck.models import REGISTRY, suggest_model
 def test_missing_binary(monkeypatch):
     monkeypatch.setenv("PATH", "")
     with pytest.raises(TranscribeError):
+        find_binary()
+
+
