@@ -12,3 +12,7 @@ def test_missing_binary(monkeypatch):
         find_binary()
 
 
+def test_missing_model(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    with pytest.raises(TranscribeError):
+        transcribe_file("x.wav")
