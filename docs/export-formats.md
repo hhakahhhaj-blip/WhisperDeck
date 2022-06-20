@@ -4,3 +4,4 @@
 |---|---|---|
 | `srt` | `segments_to_srt` | subtitles, video editing |
 | `vtt` | `segments_to_vtt` | web players |
+| `md` | `segments_to_md` | notes apps, plain-text archives |
