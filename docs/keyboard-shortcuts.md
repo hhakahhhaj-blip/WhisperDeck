@@ -2,3 +2,4 @@
 
 | key | action |
 |---|---|
+| `space` | play / pause the selected item |
