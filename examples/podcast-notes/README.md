@@ -3,3 +3,4 @@
 ```
 wd deck list --tag podcast
 wd transcribe ep42.wav --model small.en
+wd export ep42.srt --format srt
