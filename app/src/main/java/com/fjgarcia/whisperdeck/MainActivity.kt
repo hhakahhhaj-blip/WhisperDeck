@@ -38,3 +38,12 @@ class MainActivity : AppCompatActivity() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
             != PackageManager.PERMISSION_GRANTED
         ) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.RECORD_AUDIO), 41)
+            return
+        }
+        ContextCompat.startForegroundService(this, Intent(this, RecorderService::class.java))
+        status.text = getString(R.string.recording)
+    }
+
+    private fun loadDeck(): List<DeckItem> =
+        listOf(DeckItem("meeting-notes", 12), DeckItem("podcast-draft", 3))
