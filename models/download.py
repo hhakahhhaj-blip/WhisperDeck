@@ -7,3 +7,5 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
+
+
