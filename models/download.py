@@ -9,3 +9,6 @@ from pathlib import Path
 BASE = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
 
 
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default="base.en")
