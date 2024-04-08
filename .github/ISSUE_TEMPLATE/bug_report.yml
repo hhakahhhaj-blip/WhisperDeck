@@ -4,3 +4,4 @@ labels: [bug]
 body:
   - type: textarea
     id: what
+    attributes:
