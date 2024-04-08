@@ -5,3 +5,5 @@ body:
   - type: textarea
     id: what
     attributes:
+      label: What happened?
+    validations:
