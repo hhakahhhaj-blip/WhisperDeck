@@ -26,3 +26,11 @@ class DeckAdapter(private val onClick: (DeckItem) -> Unit) :
         return Holder(v)
     }
 
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        val item = items[position]
+        holder.title.text = "${item.name} - ${item.ageDays}d"
+        holder.itemView.setOnClickListener { onClick(item) }
+    }
+}
