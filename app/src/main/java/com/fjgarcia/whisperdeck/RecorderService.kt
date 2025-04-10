@@ -34,3 +34,12 @@ class RecorderService : Service() {
         .setContentText(getString(R.string.recording))
         .setSmallIcon(android.R.drawable.ic_btn_speak_now)
         .build()
+
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    override fun onDestroy() {
+        recorder?.apply { stop(); release() }
+        recorder = null
+        super.onDestroy()
+    }
+}
