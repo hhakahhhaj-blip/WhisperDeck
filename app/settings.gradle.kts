@@ -8,3 +8,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+    }
+}
+rootProject.name = "WhisperDeck"
+include(":app")
