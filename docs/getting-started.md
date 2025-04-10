@@ -6,3 +6,6 @@
 4. `wd deck list` shows recordings with durations and tags.
 5. `wd transcribe memo.wav --model base.en` prints text.
 6. `wd export deck.srt --format srt` writes subtitles.
+
+Everything stays local: the only network call ever made is the one-time
+model download.
