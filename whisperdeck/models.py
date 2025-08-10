@@ -25,3 +25,9 @@ def installed_models():
 
 
 def suggest_model(duration_s, quality="balanced"):
+    """Pick a sensible default based on clip length."""
+    if duration_s < 120:
+        return "base.en" if quality != "max" else "small.en"
+    if duration_s < 3600:
+        return "base.en" if quality == "fast" else "small.en"
+    return "medium.en" if quality != "fast" else "base.en"
