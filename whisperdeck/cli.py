@@ -42,3 +42,12 @@ def main(argv=None):
         print(text)
         return 0
 
+    if args.cmd == "export":
+        deck = Deck(".")
+        export_deck(deck, args.out, fmt=args.format)
+        print(f"wrote {args.out}")
+        return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
