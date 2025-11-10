@@ -53,3 +53,4 @@ def rms_levels(path, window_s=0.5):
         chunk = frames[i:i + step]
         acc = sum(x * x for x in chunk) / len(chunk)
         levels.append(acc ** 0.5 / 32768.0)
+    return levels
