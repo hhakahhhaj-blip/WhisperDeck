@@ -23,3 +23,13 @@ def test_load(tmp_path):
 def test_trim(tmp_path):
     p = _mk(tmp_path / "a.wav")
     out = trim(p, tmp_path / "b.wav", 0.25, 0.75)
+    _, _, frames = load_wav(out)
+    assert abs(len(frames) - 4000) < 50
+
+
+def test_rms(tmp_path):
+    p = _mk(tmp_path / "a.wav")
+    levels = rms_levels(p)
+    assert levels and all(0 <= v <= 1 for v in levels)
+
+# draft note 1323
