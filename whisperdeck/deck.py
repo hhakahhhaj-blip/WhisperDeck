@@ -31,3 +31,13 @@ class Deck:
         return found
 
     def filter_by_tag(self, tag):
+        from .tags import filter_by_tag
+        return [it for it in self.items()
+                if it.path in filter_by_tag([i.path for i in self.items()], tag)]
+
+    def summary(self):
+        items = self.items()
+        return {"count": len(items), "oldest_days":
+                round(max((i.age_days for i in items), default=0), 1)}
+
+# draft note 1327
