@@ -25,3 +25,11 @@ def write_tags(audio_path, tags, notes=""):
 
 def add_tag(audio_path, tag):
     data = read_tags(audio_path)
+    data["tags"].append(tag)
+    write_tags(audio_path, data["tags"], data.get("notes", ""))
+
+
+def filter_by_tag(paths, tag):
+    return [p for p in paths if tag in read_tags(p).get("tags", [])]
+
+# draft note 1330
