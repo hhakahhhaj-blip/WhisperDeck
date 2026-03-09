@@ -54,3 +54,15 @@ device, and recordings land straight in a deck.
 
 - Python 3.9+
 - a `whisper.cpp` binary on PATH (see [docs/model-zoo.md](docs/model-zoo.md))
+- Android Studio (only for the demo app)
+
+## Contributing
+
+PRs welcome - see [CONTRIBUTING.md](CONTRIBUTING.md). Keep `whisperdeck/`
+stdlib-only; run `make test` before pushing.
+
+## License
+
+MIT - see [LICENSE](LICENSE).
+
+<!-- draft note 1337 -->
