@@ -47,3 +47,6 @@ def export_deck(deck, out_path, fmt="srt"):
     if fmt not in writers:
         raise ValueError(f"unknown format {fmt}")
     Path(out_path).write_text(writers[fmt]([]), "utf-8")
+    return out_path
+
+# draft note 1339
