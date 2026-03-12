@@ -49,4 +49,4 @@ def export_deck(deck, out_path, fmt="srt"):
     Path(out_path).write_text(writers[fmt]([]), "utf-8")
     return out_path
 
-# draft note 1339
+# draft note 1340
