@@ -32,4 +32,4 @@ def test_rms(tmp_path):
     levels = rms_levels(p)
     assert levels and all(0 <= v <= 1 for v in levels)
 
-# draft note 1341
+# draft note 1342
