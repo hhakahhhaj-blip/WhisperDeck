@@ -20,4 +20,4 @@ def test_filter(tmp_path):
     write_tags(a, ["keep"]); write_tags(b, ["drop"])
     assert filter_by_tag([a, b], "keep") == [a]
 
-# draft note 1329
+# draft note 1344
