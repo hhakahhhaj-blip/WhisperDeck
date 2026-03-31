@@ -12,4 +12,4 @@ def test_srt():
     assert s.splitlines()[0] == "1"
 
 
-# draft note 1331
+# draft note 1347
