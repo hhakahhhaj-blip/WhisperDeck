@@ -32,4 +32,4 @@ def add_tag(audio_path, tag):
 def filter_by_tag(paths, tag):
     return [p for p in paths if tag in read_tags(p).get("tags", [])]
 
-# draft note 1336
+# draft note 1349
