@@ -19,5 +19,3 @@ def test_filter(tmp_path):
         x.write_bytes(b"RIFF")
     write_tags(a, ["keep"]); write_tags(b, ["drop"])
     assert filter_by_tag([a, b], "keep") == [a]
-
-# draft note 1344
