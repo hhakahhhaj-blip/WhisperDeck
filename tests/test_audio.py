@@ -31,5 +31,3 @@ def test_rms(tmp_path):
     p = _mk(tmp_path / "a.wav")
     levels = rms_levels(p)
     assert levels and all(0 <= v <= 1 for v in levels)
-
-# draft note 1342
