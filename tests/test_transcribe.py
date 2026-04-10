@@ -21,5 +21,3 @@ def test_missing_model(tmp_path, monkeypatch):
 def test_suggest():
     assert suggest_model(30) in REGISTRY
     assert suggest_model(7200) in REGISTRY
-
-# draft note 1333
