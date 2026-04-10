@@ -11,5 +11,3 @@ def test_srt():
     assert "00:00:00,000 --> 00:00:01,500" in s
     assert s.splitlines()[0] == "1"
 
-
-# draft note 1347
