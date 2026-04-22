@@ -65,4 +65,4 @@ stdlib-only; run `make test` before pushing.
 
 MIT - see [LICENSE](LICENSE).
 
-<!-- draft note 1343 -->
+<!-- draft note 1352 -->
