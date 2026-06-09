@@ -23,3 +23,10 @@ classifiers = [
 wd = "whisperdeck.cli:main"
 
 [tool.setuptools.packages.find]
+include = ["whisperdeck*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+<!-- draft note 1364 -->
