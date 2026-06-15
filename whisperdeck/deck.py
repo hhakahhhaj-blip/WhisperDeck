@@ -39,5 +39,3 @@ class Deck:
         items = self.items()
         return {"count": len(items), "oldest_days":
                 round(max((i.age_days for i in items), default=0), 1)}
-
-# draft note 1363
