@@ -29,4 +29,4 @@ include = ["whisperdeck*"]
 addopts = "-q"
 testpaths = ["tests"]
 
-<!-- draft note 1386 -->
+<!-- draft note 1387 -->
