@@ -16,5 +16,3 @@ models:
 
 clean:
 	rm -rf build/ dist/ *.egg-info .pytest_cache/
-
-<!-- draft note 1382 -->
